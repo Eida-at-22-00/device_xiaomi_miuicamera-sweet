@@ -1,44 +1,15 @@
-From e69a7489fcb5b5d284a9c9f68aeca40aad5ff364 Mon Sep 17 00:00:00 2001
+From 6ae95c1be27400386063c2c0fc2f8985a8f6785a Mon Sep 17 00:00:00 2001
 From: Arian <arian.kulmer@web.de>
 Date: Thu, 9 Jan 2025 23:47:48 +0100
-Subject: [PATCH 9/9] Redo shortcut icon drawables
+Subject: [PATCH 3/3] Redo shortcut icon drawables
 
 ---
- res/drawable/shortcat_cosmetic_mirror.xml   | 21 ++++++++++++++++-----
  res/drawable/shortcut_capture_mode.xml      | 21 ++++++++++++++++-----
  res/drawable/shortcut_document_mode.xml     | 21 ++++++++++++++++-----
  res/drawable/shortcut_professional_mode.xml | 21 ++++++++++++++++-----
  res/drawable/shortcut_video_mode.xml        | 21 ++++++++++++++++-----
- 5 files changed, 80 insertions(+), 25 deletions(-)
+ 4 files changed, 64 insertions(+), 20 deletions(-)
 
-diff --git a/res/drawable/shortcat_cosmetic_mirror.xml b/res/drawable/shortcat_cosmetic_mirror.xml
-index af90307a7..6d999f043 100644
---- a/res/drawable/shortcat_cosmetic_mirror.xml
-+++ b/res/drawable/shortcat_cosmetic_mirror.xml
-@@ -1,6 +1,17 @@
- <?xml version="1.0" encoding="utf-8"?>
--<vector android:height="88.0dip" android:width="88.0dip" android:viewportWidth="88.0" android:viewportHeight="88.0"
--  xmlns:android="http://schemas.android.com/apk/res/android">
--    <path android:fillColor="#ff000000" android:pathData="M44,44m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillAlpha="0.06361997" android:fillType="evenOdd" />
--    <path android:fillColor="#ff000000" android:pathData="M56 39C56 46.1797 50.1797 52 43 52C35.8203 52 30 46.1797 30 39C30 31.8203 35.8203 26 43 26C50.1797 26 56 31.8203 56 39ZM60 39C60 48.3888 52.3888 56 43 56C33.6112 56 26 48.3888 26 39C26 29.6112 33.6112 22 43 22C52.3888 22 60 29.6112 60 39ZM27 60C26.4477 60 26 60.4477 26 61V63C26 63.5523 26.4477 64 27 64H59C59.5523 64 60 63.5523 60 63V61C60 60.4477 59.5523 60 59 60H27Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
--</vector>
-\ No newline at end of file
-+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-+    <background android:drawable="@android:color/white" />
-+    <foreground>
-+        <inset android:inset="10%">
-+            <vector
-+                android:width="88dp"
-+                android:height="88dp"
-+                android:viewportWidth="88"
-+                android:viewportHeight="88">
-+                <path
-+                    android:fillColor="@android:color/black"
-+                    android:pathData="M56 39C56 46.1797 50.1797 52 43 52C35.8203 52 30 46.1797 30 39C30 31.8203 35.8203 26 43 26C50.1797 26 56 31.8203 56 39ZM60 39C60 48.3888 52.3888 56 43 56C33.6112 56 26 48.3888 26 39C26 29.6112 33.6112 22 43 22C52.3888 22 60 29.6112 60 39ZM27 60C26.4477 60 26 60.4477 26 61V63C26 63.5523 26.4477 64 27 64H59C59.5523 64 60 63.5523 60 63V61C60 60.4477 59.5523 60 59 60H27Z" />
-+            </vector>
-+        </inset>
-+    </foreground>
-+</adaptive-icon>
 diff --git a/res/drawable/shortcut_capture_mode.xml b/res/drawable/shortcut_capture_mode.xml
 index eccd7defb..de2383911 100644
 --- a/res/drawable/shortcut_capture_mode.xml
@@ -152,5 +123,5 @@ index a2e677508..c0b9cd5f3 100644
 +    </foreground>
 +</adaptive-icon>
 -- 
-2.39.5
+2.43.0
 
